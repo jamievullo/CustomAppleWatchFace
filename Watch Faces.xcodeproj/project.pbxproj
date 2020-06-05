@@ -15,7 +15,59 @@
 		C0498A9C248A9C580008C91B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0498A9A248A9C580008C91B /* Main.storyboard */; };
 		C0498A9E248A9C5A0008C91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0498A9D248A9C5A0008C91B /* Assets.xcassets */; };
 		C0498AA1248A9C5A0008C91B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0498A9F248A9C5A0008C91B /* LaunchScreen.storyboard */; };
+		C0498AAE248A9C9A0008C91B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0498AAC248A9C9A0008C91B /* Interface.storyboard */; };
+		C0498AB0248A9C9B0008C91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0498AAF248A9C9B0008C91B /* Assets.xcassets */; };
+		C0498AB7248A9C9B0008C91B /* Faces Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0498AB6248A9C9B0008C91B /* Faces Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0498ABC248A9C9B0008C91B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0498ABB248A9C9B0008C91B /* InterfaceController.swift */; };
+		C0498ABE248A9C9B0008C91B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C0498ABD248A9C9B0008C91B /* GameScene.sks */; };
+		C0498AC0248A9C9B0008C91B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0498ABF248A9C9B0008C91B /* GameScene.swift */; };
+		C0498AC2248A9C9B0008C91B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0498AC1248A9C9B0008C91B /* ExtensionDelegate.swift */; };
+		C0498AC4248A9C9C0008C91B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0498AC3248A9C9C0008C91B /* Assets.xcassets */; };
+		C0498AC8248A9C9C0008C91B /* Faces.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C0498AAA248A9C9A0008C91B /* Faces.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0498AD2248A9D7A0008C91B /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = C0498AD1248A9D7A0008C91B /* Assets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0498AB8248A9C9B0008C91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0498A85248A9C580008C91B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0498AB5248A9C9B0008C91B;
+			remoteInfo = "Faces Extension";
+		};
+		C0498AC6248A9C9C0008C91B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0498A85248A9C580008C91B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0498AA9248A9C9A0008C91B;
+			remoteInfo = Faces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0498ACC248A9C9C0008C91B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0498AB7248A9C9B0008C91B /* Faces Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0498AD0248A9C9C0008C91B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C0498AC8248A9C9C0008C91B /* Faces.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C0498A8D248A9C580008C91B /* Watch Faces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Faces.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +80,29 @@
 		C0498A9D248A9C5A0008C91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0498AA0248A9C5A0008C91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0498AA2248A9C5A0008C91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0498AAA248A9C9A0008C91B /* Faces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0498AAD248A9C9A0008C91B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C0498AAF248A9C9B0008C91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0498AB1248A9C9B0008C91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0498AB6248A9C9B0008C91B /* Faces Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Faces Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0498ABB248A9C9B0008C91B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C0498ABD248A9C9B0008C91B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C0498ABF248A9C9B0008C91B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C0498AC1248A9C9B0008C91B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C0498AC3248A9C9C0008C91B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0498AC5248A9C9C0008C91B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0498AD1248A9D7A0008C91B /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C0498A8A248A9C580008C91B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0498AB3248A9C9B0008C91B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				C0498A8F248A9C580008C91B /* Watch Faces */,
+				C0498AAB248A9C9A0008C91B /* Faces */,
+				C0498ABA248A9C9B0008C91B /* Faces Extension */,
 				C0498A8E248A9C580008C91B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				C0498A8D248A9C580008C91B /* Watch Faces.app */,
+				C0498AAA248A9C9A0008C91B /* Faces.app */,
+				C0498AB6248A9C9B0008C91B /* Faces Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +148,30 @@
 			path = "Watch Faces";
 			sourceTree = "<group>";
 		};
+		C0498AAB248A9C9A0008C91B /* Faces */ = {
+			isa = PBXGroup;
+			children = (
+				C0498AAC248A9C9A0008C91B /* Interface.storyboard */,
+				C0498AAF248A9C9B0008C91B /* Assets.xcassets */,
+				C0498AB1248A9C9B0008C91B /* Info.plist */,
+			);
+			path = Faces;
+			sourceTree = "<group>";
+		};
+		C0498ABA248A9C9B0008C91B /* Faces Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C0498AD1248A9D7A0008C91B /* Assets */,
+				C0498ABB248A9C9B0008C91B /* InterfaceController.swift */,
+				C0498ABD248A9C9B0008C91B /* GameScene.sks */,
+				C0498ABF248A9C9B0008C91B /* GameScene.swift */,
+				C0498AC1248A9C9B0008C91B /* ExtensionDelegate.swift */,
+				C0498AC3248A9C9C0008C91B /* Assets.xcassets */,
+				C0498AC5248A9C9C0008C91B /* Info.plist */,
+			);
+			path = "Faces Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,15 +182,51 @@
 				C0498A89248A9C580008C91B /* Sources */,
 				C0498A8A248A9C580008C91B /* Frameworks */,
 				C0498A8B248A9C580008C91B /* Resources */,
+				C0498AD0248A9C9C0008C91B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0498AC7248A9C9C0008C91B /* PBXTargetDependency */,
 			);
 			name = "Watch Faces";
 			productName = "Watch Faces";
 			productReference = C0498A8D248A9C580008C91B /* Watch Faces.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C0498AA9248A9C9A0008C91B /* Faces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0498ACD248A9C9C0008C91B /* Build configuration list for PBXNativeTarget "Faces" */;
+			buildPhases = (
+				C0498AA8248A9C9A0008C91B /* Resources */,
+				C0498ACC248A9C9C0008C91B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0498AB9248A9C9B0008C91B /* PBXTargetDependency */,
+			);
+			name = Faces;
+			productName = Faces;
+			productReference = C0498AAA248A9C9A0008C91B /* Faces.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C0498AB5248A9C9B0008C91B /* Faces Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0498AC9248A9C9C0008C91B /* Build configuration list for PBXNativeTarget "Faces Extension" */;
+			buildPhases = (
+				C0498AB2248A9C9B0008C91B /* Sources */,
+				C0498AB3248A9C9B0008C91B /* Frameworks */,
+				C0498AB4248A9C9B0008C91B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Faces Extension";
+			productName = "Faces Extension";
+			productReference = C0498AB6248A9C9B0008C91B /* Faces Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -104,6 +239,12 @@
 				ORGANIZATIONNAME = "Jamie vullo";
 				TargetAttributes = {
 					C0498A8C248A9C580008C91B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					C0498AA9248A9C9A0008C91B = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					C0498AB5248A9C9B0008C91B = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -122,6 +263,8 @@
 			projectRoot = "";
 			targets = (
 				C0498A8C248A9C580008C91B /* Watch Faces */,
+				C0498AA9248A9C9A0008C91B /* Faces */,
+				C0498AB5248A9C9B0008C91B /* Faces Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +282,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0498AA8248A9C9A0008C91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0498AB0248A9C9B0008C91B /* Assets.xcassets in Resources */,
+				C0498AAE248A9C9A0008C91B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0498AB4248A9C9B0008C91B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0498AC4248A9C9C0008C91B /* Assets.xcassets in Resources */,
+				C0498AD2248A9D7A0008C91B /* Assets in Resources */,
+				C0498ABE248A9C9B0008C91B /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,7 +314,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0498AB2248A9C9B0008C91B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0498AC0248A9C9B0008C91B /* GameScene.swift in Sources */,
+				C0498ABC248A9C9B0008C91B /* InterfaceController.swift in Sources */,
+				C0498AC2248A9C9B0008C91B /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0498AB9248A9C9B0008C91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0498AB5248A9C9B0008C91B /* Faces Extension */;
+			targetProxy = C0498AB8248A9C9B0008C91B /* PBXContainerItemProxy */;
+		};
+		C0498AC7248A9C9C0008C91B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0498AA9248A9C9A0008C91B /* Faces */;
+			targetProxy = C0498AC6248A9C9C0008C91B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C0498A9A248A9C580008C91B /* Main.storyboard */ = {
@@ -169,6 +354,14 @@
 				C0498AA0248A9C5A0008C91B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C0498AAC248A9C9A0008C91B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0498AAD248A9C9A0008C91B /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +517,88 @@
 			};
 			name = Release;
 		};
+		C0498ACA248A9C9C0008C91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PWX63M42K;
+				INFOPLIST_FILE = "Faces Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamievullo.Watch-Faces.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		C0498ACB248A9C9C0008C91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PWX63M42K;
+				INFOPLIST_FILE = "Faces Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamievullo.Watch-Faces.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		C0498ACE248A9C9C0008C91B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PWX63M42K;
+				IBSC_MODULE = Faces_Extension;
+				INFOPLIST_FILE = Faces/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamievullo.Watch-Faces.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		C0498ACF248A9C9C0008C91B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3PWX63M42K;
+				IBSC_MODULE = Faces_Extension;
+				INFOPLIST_FILE = Faces/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jamievullo.Watch-Faces.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,6 +616,24 @@
 			buildConfigurations = (
 				C0498AA6248A9C5A0008C91B /* Debug */,
 				C0498AA7248A9C5A0008C91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0498AC9248A9C9C0008C91B /* Build configuration list for PBXNativeTarget "Faces Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0498ACA248A9C9C0008C91B /* Debug */,
+				C0498ACB248A9C9C0008C91B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0498ACD248A9C9C0008C91B /* Build configuration list for PBXNativeTarget "Faces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0498ACE248A9C9C0008C91B /* Debug */,
+				C0498ACF248A9C9C0008C91B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
